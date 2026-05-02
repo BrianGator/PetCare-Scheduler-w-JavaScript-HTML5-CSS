@@ -1,13 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Task 1: Your own name appears in the top-left corner instead of "Jane Doe" -->
+    <title>Brian McCarthy - Pet Care Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for logos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
+    <!-- Navigation -->
+    <nav>
+        <!-- Task 1: Your name appears in the top-left corner -->
+        <a href="#" class="name-brand">Brian McCarthy</a>
+        
+        <!-- Task 1: A navigation bar includes About Me, Project Details, Skills, and Recommendations -->
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#projects">Project Details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+            <!-- Task 1: The Home icon works correctly -->
+            <button class="home-btn" id="homeBtn" title="Back to top">
+                <i data-lucide="home"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Task 1: A unique About Me section includes your name and a personalized summary -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm <strong>Brian McCarthy</strong>, a dedicated Pet Care Professional with over 8 years of experience. My unique background in IBM Java development allows me to build custom scheduling and health-tracking solutions that ensure no pet ever misses an appointment or a meal.</p>
+                <p>I combine technical precision with a deep compassion for animals, specialized in behavioral training and advanced pet first aid. My goal is to bridge the gap between pet care and modern technology.</p>
+            </div>
+            <div class="about-image">
+                <img src="brian-portrait.jpg" alt="Brian McCarthy - Pet Care Professional in light blue shirt">
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 1: Three new skills are added with proper logos and text formatting -->
+    <section id="skills">
+        <div style="text-align: center;">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i data-lucide="dog" style="color: #6366f1;"></i>
+                <p>Behavioral Training</p>
+            </div>
+            <div class="skill-card">
+                <i data-lucide="shield-check" style="color: #f43f5e;"></i>
+                <p>Pet First Aid</p>
+            </div>
+            <div class="skill-card">
+                <i data-lucide="code" style="color: #3b82f6;"></i>
+                <p>IBM Java Dev</p>
+            </div>
+            <div class="skill-card">
+                <i data-lucide="calendar" style="color: #8b5cf6;"></i>
+                <p>Sync Scheduling</p>
+            </div>
+            <div class="skill-card">
+                <i data-lucide="smartphone" style="color: #eab308;"></i>
+                <p>UI/UX Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 1: Three new projects are added with appropriate headings -->
+    <section id="projects">
+        <div style="text-align: center;">
+            <h2>Project Details</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <i data-lucide="brain" style="margin-bottom: 1rem; color: #4f46e5;"></i>
+                <h3>Java Pet Care Scheduler</h3>
+                <p>A full-stack application built using IBM Java EE for clinics to manage hundreds of pet appointments simultaneously.</p>
+            </div>
+            <div class="project-card">
+                <i data-lucide="heart" style="margin-bottom: 1rem; color: #f43f5e;"></i>
+                <h3>K9 Vital Tracker</h3>
+                <p>An IoT integration project that tracks canine health metrics and displays them in a sleek, responsive dashboard.</p>
+            </div>
+            <div class="project-card">
+                <i data-lucide="map" style="margin-bottom: 1rem; color: #10b981;"></i>
+                <h3>PawsConnect Hub</h3>
+                <p>A geolocation-based platform connecting pet owners with verified local sitters and walkers in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 1: Three new recommendations are included in the correct format -->
+    <section id="recommendations">
+        <div style="text-align: center;">
+            <h2>Recommendations</h2>
+        </div>
+        <div class="recommendations-container" id="rec-container">
+            <div class="rec-card">
+                <p>"Brian's technical expertise in Java coupled with his dog training skills made our clinic launch an absolute success!"</p>
+                <p><strong>— Julia Henderson</strong></p>
+            </div>
+            <div class="rec-card">
+                <p>"The scheduler Brian built is incredibly intuitive. I can't imagine running my pet hotel without it anymore."</p>
+                <p><strong>— Marco Rossi</strong></p>
+            </div>
+            <div class="rec-card">
+                <p>"My dog Max used to be so anxious, but Brian's training transformed him. He truly loves what he does."</p>
+                <p><strong>— Samantha Miller</strong></p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h3>Add a Recommendation</h3>
+            <form id="recForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="recName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Recommendation</label>
+                    <textarea id="recText" placeholder="Your message..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Submit Recommendation</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="popup">
+        <i data-lucide="check-circle" style="color: #10b981;"></i>
+        <span>Submitted Successfully!</span>
+    </div>
+
+    <footer style="background: #111827; color: white; padding: 4rem 10% 2rem; text-align: center;">
+        <p>&copy; 2026 Brian McCarthy - Professional Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
