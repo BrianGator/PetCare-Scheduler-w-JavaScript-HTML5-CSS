@@ -1,3 +1,6 @@
+
+PetCare-Scheduler-w-JavaScript-HTML5-CSS
+
 **Prerequisites:**  Node.js
 
 1. Install dependencies:
