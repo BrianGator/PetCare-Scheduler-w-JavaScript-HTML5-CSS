@@ -1,0 +1,24 @@
+### PROJECT REQUIREMENTS & ORIGINAL PROMT
+
+#### Goal
+Create a single-page portfolio website using HTML5, CSS, and JavaScript.
+
+#### Task 1: Navigation & Structure
+- Change name in top-left to "Brian McCarthy".
+- Navigation bar includes: About Me, Project Details, Skills, and Recommendations.
+- Include a Home icon that navigates to the top of the page.
+
+#### Task 2: Content Sections
+- **About Me**: Unique section with a personalized summary and specific name.
+- **Skills**: Add five skills with proper logos and formatting (Behavioral Training, Pet First Aid, IBM Java Dev, Sync Scheduling, UI/UX Design).
+- **Projects**: Add three projects with appropriate headings (Java Pet Care Scheduler, K9 Vital Tracker, PawsConnect Hub).
+- **Recommendations**: Include three initial recommendations and a form to submit new ones.
+
+#### Task 3: Styling
+- Style name correctly in the profile section.
+- Headers (About Me, Project, Skills, Recommendations) must appear bold and underlined when hovered over.
+- Ensure the site is responsive and visually polished.
+
+#### Task 4: Functionality
+- Implement a `showPopup` function that triggers a success notification ONLY when a new recommendation is submitted.
+- Ensure smooth transitions and intuitive navigation.
