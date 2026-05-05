@@ -26,5 +26,28 @@ A professional, responsive single-page portfolio website showcasing specialized 
    - Observe the **Success Popup** indicating your submission was received.
 4. **Navigation**: Use the navigation links in the header to jump to specific sections, or click the **Home Icon** to return to the top instantly.
 
----
-*Created for the Pet Care Professional Portfolio Project.*
+## 🧪 Testing Suite Architecture
+The project includes a comprehensive multi-layered testing strategy across several frameworks:
+
+### 🎭 Playwright & Selenium (E2E)
+- **Playwright-Tests/**: 15 modern cross-browser tests for user journey validation.
+- **Selenium-Tests/**: 15 legacy-compatible stability tests for long-term support.
+
+### 🌲 Cypress & Cucumber (Frontend/BDD)
+- **Cypress-Tests/**: 15 tests for component interaction and lifecycle.
+- **Cucumber-Tests/**: 15 behavior-driven scenarios defining user requirements in natural language.
+
+### ⚡ Performance & Reliability
+- **Load-Tests**: 8 tests for high-traffic simulation.
+- **Stress-Tests**: 8 tests searching for system failure points.
+- **Performance-Tests**: 8 audits focusing on Core Web Vitals.
+
+### 🛠️ Core Verification
+- **Unit-Tests**: 8 tests for JavaScript logic isolation.
+- **System-Tests**: 8 holistic environment checks.
+- **Integration-Tests**: 8 tests ensuring HTML/CSS/JS communication.
+- **Security-Tests**: 8 tests for input validation and secure resource loading.
+- **End-to-End-Tests**: 8 complete user workflows from landing to submission.
+
+Each folder contains a `report.md` with detailed test descriptions and outcomes.
+
